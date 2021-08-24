@@ -2,7 +2,7 @@
 #!/bin/bash
 sudo apt update
 sudo apt install -y wget rsyslog
-wget 
+wget https://raw.githubusercontent.com/jax79sg/syslog/main/centralised/rsyslog.conf 
 sudo cp rsyslog.conf /etc/
 sudo systemctl start rsyslog
 sudo systemctl enable rsyslog
