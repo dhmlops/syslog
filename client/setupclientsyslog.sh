@@ -2,7 +2,7 @@
 #!/bin/bash
 sudo apt update
 sudo apt install -y wget rsyslog
-wget 
+wget https://raw.githubusercontent.com/jax79sg/syslog/main/client/50-default.conf
 sudo cp 50-default.conf /etc/rsyslog.d/
 sudo systemctl start rsyslog
 sudo systemctl enable rsyslog
